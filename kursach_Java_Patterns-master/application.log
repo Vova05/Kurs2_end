@@ -1,0 +1,132 @@
+1302 [background-preinit] INFO  o.h.validator.internal.util.Version –HV000001: Hibernate Validator 6.1.7.Final
+1301 [restartedMain] INFO  com.example.demo.JavaApplication –Starting JavaApplication using Java 15.0.2 on sony-PC with PID 13296 (D:\JavaProject4\kursach_Java_Patterns-master\kursach_Java_Patterns-master\target\classes started by sony in D:\JavaProject4\kursach_Java_Patterns-master\kursach_Java_Patterns-master)
+1307 [restartedMain] INFO  com.example.demo.JavaApplication –No active profile set, falling back to default profiles: default
+1363 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor –Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1363 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor –For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2589 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2661 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+3397 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer –Tomcat initialized with port(s): 8080 (http)
+3406 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol –Initializing ProtocolHandler ["http-nio-8080"]
+3407 [restartedMain] INFO  o.a.catalina.core.StandardService –Starting service [Tomcat]
+3407 [restartedMain] INFO  o.a.catalina.core.StandardEngine –Starting Servlet engine: [Apache Tomcat/9.0.44]
+3522 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –Initializing Spring embedded WebApplicationContext
+3522 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext –Root WebApplicationContext: initialization completed in 2158 ms
+3786 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper –HHH000204: Processing PersistenceUnitInfo [name: default]
+3831 [restartedMain] INFO  org.hibernate.Version –HHH000412: Hibernate ORM core version 5.4.29.Final
+3933 [restartedMain] INFO  o.h.annotations.common.Version –HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4016 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource –HikariPool-1 - Starting...
+4196 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource –HikariPool-1 - Start completed.
+4223 [restartedMain] INFO  org.hibernate.dialect.Dialect –HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+5232 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator –HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5245 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –Initialized JPA EntityManagerFactory for persistence unit 'default'
+5405 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer –LiveReload server is running on port 35729
+6009 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration –spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6198 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain –Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43cbbcf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@1377a402, org.springframework.security.web.header.HeaderWriterFilter@2127c090, org.springframework.security.web.authentication.logout.LogoutFilter@71aefd5a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49d7d815, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@64728a4e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@28056d71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@588a48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14b92ab1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3564d948, org.springframework.security.web.session.SessionManagementFilter@5b510bf9, org.springframework.security.web.access.ExceptionTranslationFilter@2edc9cdd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53411fe9]
+6367 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor –Initializing ExecutorService 'applicationTaskExecutor'
+6843 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver –Exposing 2 endpoint(s) beneath base path '/actuator'
+6923 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol –Starting ProtocolHandler ["http-nio-8080"]
+6947 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer –Tomcat started on port(s): 8080 (http) with context path ''
+6970 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor –No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+6978 [pool-2-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler –Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at com.example.demo.service.schedulerService.schedulerService.createSQLCopy(schedulerService.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+6981 [restartedMain] INFO  com.example.demo.JavaApplication –Started JavaApplication in 6.178 seconds (JVM running for 8.11)
+7421 [RMI TCP Connection(2)-192.168.0.18] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –Initializing Spring DispatcherServlet 'dispatcherServlet'
+7422 [RMI TCP Connection(2)-192.168.0.18] INFO  o.s.web.servlet.DispatcherServlet –Initializing Servlet 'dispatcherServlet'
+7423 [RMI TCP Connection(2)-192.168.0.18] INFO  o.s.web.servlet.DispatcherServlet –Completed initialization in 1 ms
+17700 [http-nio-8080-exec-3] INFO  com.example.demo.log.Aspect –Parameters: Pol
+56175 [http-nio-8080-exec-2] INFO  com.example.demo.log.Aspect –Parameters: Pol
+56358 [http-nio-8080-exec-3] INFO  com.example.demo.log.Aspect –Parameters: Pol
+56366 [http-nio-8080-exec-3] INFO  com.example.demo.log.Aspect –Parameters: USER
+56376 [http-nio-8080-exec-3] INFO  com.example.demo.log.Aspect –Parameters: Pol
+56381 [http-nio-8080-exec-3] INFO  com.example.demo.log.Aspect –Parameters: ADMIN
+56384 [http-nio-8080-exec-3] INFO  com.example.demo.log.Aspect –Parameters: Pol
+56387 [http-nio-8080-exec-3] INFO  com.example.demo.log.Aspect –Parameters: STAFF
+914380 [http-nio-8080-exec-5] INFO  com.example.demo.log.Aspect –Parameters: USER
+914521 [http-nio-8080-exec-5] INFO  com.example.demo.log.Aspect –Parameters: com.example.demo.components.User@52cdd0f2
+920075 [http-nio-8080-exec-9] INFO  com.example.demo.log.Aspect –Parameters: test@mail.ru
+920245 [http-nio-8080-exec-10] INFO  com.example.demo.log.Aspect –Parameters: test@mail.ru
+920248 [http-nio-8080-exec-10] INFO  com.example.demo.log.Aspect –Parameters: USER
+920250 [http-nio-8080-exec-10] INFO  com.example.demo.log.Aspect –Parameters: test@mail.ru
+920252 [http-nio-8080-exec-10] INFO  com.example.demo.log.Aspect –Parameters: ADMIN
+920254 [http-nio-8080-exec-10] INFO  com.example.demo.log.Aspect –Parameters: test@mail.ru
+920257 [http-nio-8080-exec-10] INFO  com.example.demo.log.Aspect –Parameters: STAFF
+985015 [http-nio-8080-exec-4] INFO  com.example.demo.log.Aspect –Parameters: test@mail.ru
+985174 [http-nio-8080-exec-5] INFO  com.example.demo.log.Aspect –Parameters: test@mail.ru
+985177 [http-nio-8080-exec-5] INFO  com.example.demo.log.Aspect –Parameters: USER
+985179 [http-nio-8080-exec-5] INFO  com.example.demo.log.Aspect –Parameters: test@mail.ru
+985181 [http-nio-8080-exec-5] INFO  com.example.demo.log.Aspect –Parameters: ADMIN
+985182 [http-nio-8080-exec-5] INFO  com.example.demo.log.Aspect –Parameters: test@mail.ru
+985184 [http-nio-8080-exec-5] INFO  com.example.demo.log.Aspect –Parameters: STAFF
+1807017 [pool-2-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler –Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at com.example.demo.service.schedulerService.schedulerService.createSQLCopy(schedulerService.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+3607056 [pool-2-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler –Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at com.example.demo.service.schedulerService.schedulerService.createSQLCopy(schedulerService.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+5407096 [pool-2-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler –Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at com.example.demo.service.schedulerService.schedulerService.createSQLCopy(schedulerService.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+7207138 [pool-2-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler –Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at com.example.demo.service.schedulerService.schedulerService.createSQLCopy(schedulerService.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
